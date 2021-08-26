@@ -1,2 +1,17 @@
 # AirPR
- Wifi autorization service
+
+Wifi autorization service
+My old website
+
+completed now.
+he's waiting for optimization and refactoring
+
+what i planing to do?
+
+- code rebuild
+- BEM naming
+- Responsive and adaptive
+- mobile version
+
+this website in the internet
+[AirPR](https://airpr.ru/)
