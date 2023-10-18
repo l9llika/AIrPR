@@ -1,9 +1,8 @@
-﻿<!DOCTYPE html
+﻿<!DOCTYPE html 
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <head>
   <link rel="shortcut icon" href="/img/fav_air.ico" type="image/x-icon">
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="pages/index.css" rel="stylesheet" type="text/css" />
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
   <script src="js/jquery.js"></script>
@@ -14,69 +13,43 @@
 </head>
 
 <body>
-  <div class="body">
-    <nav class="menu">
+  <section class="header">
+    <a href="#"><img src="img/logo-header.png" alt="Логотип AIR PR" class="header__logo"></a>
+    <nav class="header__navbar">
       <ul>
-        <div class="menulogo"><img src="img/logo_n.png" alt="log"></div>
-        <li><a href="#"><span class="al">УСЛУГИ</span></a>
-          <ul>
-            <li><a href="#wifiin">
-                <div class="marg">WIFI Идентификация</div>
-              </a></li>
-            <li><a href="#yad">Настройка Яндекс директ</a></li>
-            <li><a href="#radar">Радар</a></li>
-            <li><a href="#web">Создание Web-сайтов</a></li>
-            <li><a href="#char">Зарядные устройства</a></li>
-          </ul>
-        <li><a href="#">ЦЕНЫ</a>
-          <ul>
-            <li><a href="#cenwifi">WIFI Идентификация</a></li>
-            <li><a href="#yad">Настройка Яндекс директ</a></li>
-            <li><a href="#char">Зарядные устройства</a></li>
-          </ul>
-        </li>
-        <li><a href="#form">КОНТАКТЫ</a></li>
-        <li><a href="http://cp.airpr.ru/login"><span class="s8">ВОЙТИ В КАБИНЕТ</span></a></li>
+        <li class="header__navbar-item"><a href="#">УСЛУГИ</a></li>
+        <li class="header__navbar-item"><a href="#">ЦЕНЫ</a></li>
+        <li class="header__navbar-item"><a href="#">КОНТАКТЫ</a></li>
+        <li class="header__navbar-item"><a href="#">ВОЙТИ В КАБИНЕТ</a></li>
       </ul>
     </nav>
-    <div class="gwrap">
-      <div style="width:100%; height:1px; clear:both;"></div>
-      <div class="logo2"><img src="img/logo_cube.png" alt="logo2"></div>
-      <div class="logo3">
-        <h1>Агентство интернет рекламы</h1>
-      </div>
-      <div style="width:100%; height:1px; clear:both;"></div>
-      <div class="wrap">
-        <div class="layer1">
-          <img src="img/wifi.png" alt="wifi" />
-          <br />
-          WIFI Идентификация
-          <br />
-          <img src="img/target.png" alt="wifi" />
-          <br />
-          Настройка Яндекс директ
-          <br />
-          <img src="img/radar.png" alt="wifi" />
-          <br />
-          Wifi Радар
-          <br />
-          <img src="img/web.png" alt="wifi" />
-          <br />
-          Создание Web-сайтов<br />
-          <img src="img/char.png" alt="wifi" />
-          <br />
-          Зарядные устройства
-          <br />
+  </section>
+  <!-- ./header -->
+  <main class="main">
+    <section class="cover">
+      <img src="img/logo-cover.png" alt="Логотип AIR PR" class="cover__logo">
+      <h1 class="cover__title">Агентство интернет рекламы</h1>
+      <div class="cover__wrapper">
+        <div class="cover__services">
+          <img src="img/wifi.png" alt="Wifi идентификация" class="cover__services-icon">
+          <span class="cover__services-text">WIFI Идентификация</span>
+          <img src="img/ya-direct.png" alt="Wifi идентификация" class="cover__services-icon">
+          <span class="cover__services-text">Настройка Яндекс директ</span>
+          <img src="img/radar.png" alt="Wifi идентификация" class="cover__services-icon">
+          <span class="cover__services-text">Wifi Радар</span>
+          <img src="img/web.png" alt="Wifi идентификация" class="cover__services-icon">
+          <span class="cover__services-text">Создание Web-сайтов</span>
+          <img src="img/charging.png" alt="Wifi идентификация" class="cover__services-icon">
+          <span class="cover__services-text">Зарядные устройства</span>
         </div>
-
-        <div class="layer2">
+        <div class="form">
           <form method="POST" id="formx" action="javascript:void(null);" onsubmit="call()">
             <h2>Оставьте заявку</h2>
-            <input name="name" placeholder="Ваше имя:" class="textbox" required />
-            <input name="emailaddress" placeholder="Ваш e-mail:" class="textbox" type="email" required />
-            <textarea rows="4" cols="50" name="subject" placeholder="Ваш номер телефона:" class="message"
+            <input name="name" placeholder="Ваше имя:" class="form__textbox" required />
+            <input name="emailaddress" placeholder="Ваш e-mail:" class="form__textbox" type="email" required />
+            <textarea rows="4" cols="50" name="subject" placeholder="Ваш номер телефона:" class="form__message"
               required></textarea>
-            <input name="submit" class="button" type="submit" value="Отправить заявку" />
+            <input name="submit" class="form__button" type="submit" value="Отправить заявку" />
           </form>
 
           <script type="text/javascript" language="javascript">
@@ -97,395 +70,82 @@
             }
           </script>
         </div>
-        <div style="width:100%; height:1px; clear:both;"></div>
-
-        <a name="wifiin"></a>
-        <div class="blog1"><img src="img/wifi.png" alt="wifi" width="81" height="81" class="logoblog" /><br />
-          <h2>WIFI Идентификация<br />
-            и авторизация для бизнеса</h2>
-          <h3>Для ресторанов, кафе, гостиниц, <br />фитнес клубов и других публичных<br /> WiFi-точек доступа</h3>
-        </div>
-        <div style="width:100%; height:1px; clear:both;"></div>
-        <div class="wrap">
-          <div class="layer3">
-            <h4>Как мы помогаем бизнесу</h4>
-            <h3>C 2012 года помогаем бизнесу с организацией и поддержкой публичных WiFi сетей с маркетинговыми и
-              аналитическими возможностями.<br /> Уже 6 лет мы доказываем, что WiFi<br /> может приносить весомую
-              пользу. <br />
-              За это время мы помогли двум тысячам заведений решить бизнес-задачи <br />через гостевую WiFi сеть.
-              <br />
-              <br />
-              Мы протестировали большое количество<br /> маркетинговых механик вместе с нашими <br />
-              клиентами и у нас есть рабочие кейсы, которые мы готовы запустить для вас. Также, мы можем разработать
-              индивидуальное решение под <br />задачи вашего бизнеса. <br /> <a href="#form">
-                <h4>Оставить заявку</h4>
-              </a>
-            </h3>
-          </div>
-          <div class="layer2"><img src="img/phone1.png" alt="phone1bask" width="308" height="625" /></div>
-        </div>
-        <div style="width:100%; height:1px; clear:both;"></div>
-
-
-
-        <div class="wrap3"><br />
-          <h1>Как это работает?</h1>
-          <div class="layer7"><img src="img/b-1.png" alt="b1" width="201" height="220" /><br />
-            <span class="s12">1.ПОДКЛЮЧЕНИЕ</span><br /><span class="s13">Гость подключается к WiFi-сети<br />с любого
-              устройства</span></div>
-          <div class="layer7"><img src="img/b-2.png" alt="b1" width="132" height="219"><br />
-            <span class="s12">2. WIFI АВТОРИЗАЦИЯ<br /></span><span class="s13">Для доступа в интернет гость <br />
-              выполняет ключевое действие</span></div>
-          <div class="layer7"><br />
-            <table width="355" height="252">
-              <tr>
-                <td><img src="img/social.png" alt="soc" width="76" height="60" /></td>
-                <td>
-                  <div align="left"><span class="s12"><strong>Подписаться</strong></span><br /><span class="s13">на вашу
-                      страницу</span></div>
-                </td>
-              </tr>
-              <tr>
-                <td><img src="img/share.png" alt="sh" width="75" height="60" /></td>
-                <td>
-                  <div align="left"><span class="s12"><strong>Разместить пост</strong></span><br /><span class="s13">в
-                      социальные сети</span></div>
-                </td>
-              </tr>
-              <tr>
-                <td><img src="img/protection.png" alt="pr" width="75" height="60" /></td>
-                <td>
-                  <div align="left"><span class="s12"><strong>Пройти SMS-</strong></span><br /><span
-                      class="s13">идентификацию</span></div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <div style="width:100%; height:1px; clear:both;"></div>
-        <div class="wrap">
-          <div class="layer2"><img src="img/phone5.png" alt="phone1bask" width="320" height="500" /> </div>
-          <div class="layer4">
-            <h4>Мы обеспечим исполнение<br />
-              закона об SMS-идентификации<br />
-              и убережем от штрафов</h4>
-            <h3>Система <span class="s1">Air PR</span> обеспечивает исполнение закона<br />
-              об обязательной идентификации пользователей<br />
-              публичного WiFi</h3><span class="s2">*В соответствии с постановлением Правительства РФ №758 от<br />
-              31 июля 2014 г., а также №801 от 12 августа 2014 г., согласно которым <br />
-              пользователи публичных WiFi-сетей должны в обязательном порядке<br />
-              проходить идентификацию</span>
-          </div>
-        </div>
-        <div style="width:100%; height:1px; clear:both;"></div>
-        <div class="wrap">
-          <div class="layer3"><br />
-            <h4>Гости расскажут друзьям<br />
-              о вашей компании взамен<br />
-              на WiFi</h4>
-            <h3>90% покупателей доверяют рекомендациям<br />
-              друзей больше, чем классической рекламе.
-              <br />
-              <br />
-              Репосты гостей в социальных сетях принесут<br />
-              более 100 просмотров рекламных постов в день.
-            </h3>
-          </div>
-          <div class="layer2"><img src="img/phone3.png" alt="phone1bask" width="432" height="500" /></div>
-        </div>
-        <div style="width:100%; height:1px; clear:both;"></div>
-        <div class="wrap">
-          <div class="layer2"><img src="img/phone2.png" alt="phone1bask" width="361" height="500" /> </div>
-          <div class="layer4">
-            <h4>Брендированные <br />стартовые страницы</h4>
-            <h3>Взаимодействуйте с вашей аудиторией<br />
-              при помощи быстрого и удобного<br />
-              инструмента по созданию стартовых страниц.<br /><br />
-              Загружайте актуальные акции,<br />скидки и предложения<br />
-              прямо из вашего личного кабинета.<br /><br />
-
-              Используйте встроенные шаблоны<br />
-              под каждое устройство или закажите<br />
-              индивидуальный дизайн.
-            </h3>
-          </div>
-        </div>
-        <div style="width:100%; height:1px; clear:both;"></div>
-        <div class="wrap">
-          <div class="layer3">
-            <h4>Собирайте отзывы и оценки<br />
-              качества услуг через WiFi</h4>
-            <h3>Хотите избежать негативных отзывов в<br />
-              интернете и улучшить качество услуг?
-              <br />
-              <br />
-              Гости оставят отзыв при подключении к WiFi.<br />
-              Сервис даст возможность получить оценку <br />
-              работы персонала и вернуть гостя до того, как <br />
-              негатив сможет стать публичным.
-            </h3>
-          </div>
-          <div class="layer2"><img src="img/phone4.png" alt="phone1bask" width="475" height="500" /></div>
-        </div>
-        <div style="width:100%; height:1px; clear:both;"></div>
-
-        <div class="n1"><span class="s3">AIR PR Light </span>
-          <div class="jh1">
-            <span>
-              Закрывает исключительно задачи по исполнению <br /> Постановлений
-              Правительства РФ 758 и 801:<br />
-            </span></div>
-          <div class="jh2">
-            <ul>
-              <li><span><strong>Идентификация по звонку</strong></span> <br />
-                <span class="стиль3">(включена в стоимость решения)<br />
-                  более 90% партнеров и клиентов<br />
-                  используют именно этот способ идентификации;<br />
-                  <br />
-                </span>
-              </li>
-              <li><strong>SMS-идентификация</strong><br />
-                <span><span class="стиль3">
-                    (при использовании нашего шлюза идентификации
-                    оплачиваются дополнительно);<br />
-                  </span></span><br /></li>
-              <li><span><strong>Редактирование изображения <br />
-                    стартовой страницы</strong><br />
-                </span><br />
-              </li>
-              <li><span><strong>Часть аналитических модулей </strong><br />
-                  (статистика подключений, почасовой трафик);<br />
-                </span>
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="jh3">
-            <span class="cen">Стоимость:</span><br />
-            <span class="cen1">650</span></span><span class="s4">₽</span><strong>/</strong>месяц
-            <input name="submit" class="button2" type="submit" value="Отправить заявку"
-              onclick="javascript:window.location='#form'" /></div>
-        </div>
-        <a name="cenwifi"></a>
-        <div class="n2">
-          <h8><span class="s10">AIR PR +</span>
-            <div class="jh1"><span>
-                включает в себя AIR PR Light, у более чем 90%
-                клиентов установлено именно это решение:
-                <br /></span></div>
-            <div class="jh2">
-              <ul>
-                <li><strong>Социальный маркетинг</strong><br />
-                  <span class="стиль3">авторизация через соц.сети: Facebook, ВКонтакте, Instagram,
-                    Одноклассники, Twitter, Google+);</span></li><br />
-                <li><strong>Опросы и обратная связь</strong></li>
-                <li><strong>Сбор Email и анкетирование</strong></li>
-                <br />
-                <li><strong> Расширенные аналитические возможности</strong> <br />
-                  <span class="стиль3">(сбор демографических данных гостей, посещения по клиенту,
-                    география посещений для сетей); </span></li>
-                <li><strong>Интеграция в программу лояльности <br />
-                    компании </strong><br />
-                  <span class="стиль3">(устройство, как карта клиента при подключении к WiFi, <br />
-                    установка мобильных приложений)</span>; </li>
-                <li><strong>Рекламный модуль</strong> <br />
-                  <span class="стиль3">(управление контентом стартовой страницы, <br />
-                    видео- и графические форматы рекламы);</span></li>
-              </ul>
-            </div>
-            <div class="jh3">
-              <span class="cen">Стоимость:</span><br />
-              <span class="cen1">1 000</span></span><span class="s4">₽</span>/месяц
-              <input name="submit" class="button2" type="submit" value="Отправить заявку"
-                onclick="javascript:window.location='#form'" /></div>
-        </div>
-        <div class="n3"><span class="s11">AIR PR + Радар</span>
-          <div class="jh1"><span>
-              включает в себя Wifi Радар, который закрывает<br />
-              особые потребности и задачи клиентов, а также: </em></span></div>
-
-          <div class="jh2">
-            <ul>
-              <li><strong> Социальный маркетинг </strong><br />
-                <span class="стиль3">(авторизация через соц.сети: Facebook, ВКонтакте, Instagram,
-                  Одноклассники, Twitter, Google+);</span></li>
-              <br />
-              <li><strong>Опросы и обратная связь; </strong></li>
-              <li><strong> Сбор Email и анкетирование; </strong></li>
-              <br />
-              <li><strong>Расширенные аналитические возможности </strong><br />
-                <span class="стиль3">(сбор демографических данных гостей, посещения по клиенту,
-                  география посещений для сетей); </span></li>
-              <li><strong>Интеграция в программу лояльности <br />
-                  компании</strong> <br />
-                <span class="стиль3">(устройство, как карта клиента при подключении к WiFi, <br />
-                  установка мобильных приложений); </span></li>
-              <li><strong>Рекламный модуль </strong><br />
-                <span class="стиль3">(управление контентом стартовой страницы, <br />
-                  видео- и графические форматы рекламы);</span></li>
-              <li><strong>Wifi-Радар</strong> <br />
-                <span class="стиль3">(установка, настройка и обслуживание радара</span><span class="стиль3"><br />
-                  в любом удобном для вас месте);</span></li>
-            </ul>
-          </div>
-          <div class="jh3">
-            <span class="cen">Стоимость:<br /></span>
-            <span class="cen1">1 500</span><span class="s4">₽</span>/месяц
-            <input name="submit" class="button2" type="submit" value="Отправить заявку"
-              onclick="javascript:window.location='#form'" /></div>
-        </div>
       </div>
-      <div style="width:100%; height:1px; clear:both;"></div>
-      <a name="yad"></a>
-      <div class="blog2"><img src="img/target.png" alt="wifi" width="81" height="81" class="logoblog" /><br />
-        <h2>Настройка <span class="s9">Я</span>ндекс директ</h2>
-      </div>
-      <div style="width:100%; height:1px; clear:both;"></div>
-      <div class="wrap4">
-        <div class="layer6">
-          <h4>Покажите рекламу<br />в интернете вашим гостям</h4>
-          <h3>Создаем сайты и настраиваем <span class="s9">Я</span>ндекс Директ.<br />Индивидуальный подход к каждому
-            клиенту; <br />НИЗКИЕ ЦЕНЫ </h3>
-        </div>
-        <div class="layer5"><img src="img/yad.png" alt="phone1bask" width="650" height="390" /></div>
-      </div><a name="radar"></a>
-      <div style="width:100%; height:1px; clear:both;"></div>
-    </div>
-    <div class="wrap5">
-      <div class="blog2"><img src="img/radar.png" alt="wifi" width="81" height="81" class="logoblog" /><br />
-        WIFI-Радар</h2>
-      </div>
-      <div class="layer3">
-        <h4>WIFI Радар</h4><br />
-        <h5>Потенциальные клиенты проходят мимо <br />вашего заведения, но по какой-либо <br />причине не заходят.<br />
-          Соберите с помощью WiFi-Радара аудиторию <br />
-          для таргетированной рекламы <br />
-          в Яндекс, MyTarget, Вконтакте, <br />
-          Одноклассниках, Mail.Ru.<br /><br />
-          С помощью Радара мы можем посчитать <br />вашу проходимость.</h5>
-      </div>
-      <div class="layer2"><img src="img/rad1.png" alt="phone1bask" width="554" height="494" /></div>
-
-      <div class="layer8">
-        <img src="img/work-item-install.svg" alt="inst" /><br />
-        <h5>Ставим WiFi-Радар</h5>
-        <h6>Специальный роутер собирает <br />
-          метки всех устройств<br />
-          с включенным WiFi <br />в радиусе до 50 метров</h6>
-      </div>
-      <div class="layer8">
-        <img src="img/work-item-collect.svg" alt="inst" /><br />
-        <h5>Собираем аудиторию</h5>
-        <h6>Используя данные с WiFi-Радара,<br /> мы создаем
-          аудиторию для<br /> таргетирования рекламы<br />
-          в Яндекс и MyTarget</h6>
-      </div>
-      <div class="layer8">
-        <img src="img/work-item-tune.svg" alt="inst" /><br />
-        <h5>Вы запускаете рекламу</h5>
-        <h6>Настройте рекламу в Яндекс, Вконтакте,<br />
-          Одноклассники, Mail.Ru<br /> и других площадках
-          MyTarget на тех, <br />кто реально приходил или был<br /> рядом с вашим заведением</h6>
-      </div>
-      <div style="width:100%; height:1px; clear:both;"></div>
-      <h4>Кому необходим WIFI Радар?</h4><br />
-      <div class="layer21"><img src="img/useful-catering.svg" alt="inst" align="left" class="imgradar" />
-        <h5>Рестораны, бары, магазины, гостиницы, клиники,
-          фитнес, салоны красоты, торговые<br />
-          и развлекательные центры</h5>
-        <h6>Оборудуйте вашу точку продаж WiFi-Радаром, <br />
-          чтобы собирать аудиторию и привлекать гостей.</h6>
-      </div>
-      <div class="layer21"><img src="img/useful-event.svg" alt="inst" align="left" class="imgradar" />
-        <h5>Мероприятия, рекламные агентства,<br /> BTL, концерты, промоутеры</h5>
-        <h6>Что если бы вы могли собрать аудиторию посетителей мероприятия? <br />Или догнать людей рекламой в
-          интернете<br /> после посещения вашей промо-точки?</h6>
-      </div>
-    </div><a name="web"></a>
-    <div style="width:100%; height:1px; clear:both;"></div>
-    <div class="body2">
-      <a name="yad"></a>
-      <!-- <div class="blog2"><img src="img/web.png" alt="wifi" width="81" height="81" class="logoblog" /><br />
-        <h2>Создание web-сайтов</h2>
-      </div>
-      <div style="width:100%; height:1px; clear:both;"></div>
-      <div class="wrap4">
-        <div class="layer6">
-          <h4>Расскажите о себе <br />всему миру!</h4>
-          <h3>Наверное, каждый предприниматель<br />
-            хочет получать максимум прибыли <br />
-            со всех своих вложений. </h3>
-          <h3>Создание <span class="s1">landing page</span> – это отличное
-            решение<br />для тех, кто нацелен
-            на продажи товара <br />и стремится
-            работать на их рост.</h3>
-        </div>
-        <div class="layer5"><img src="img/web2.png" alt="phone1bask" width="500" height="366" /></div>
-      </div><a name="char"></a>
-      <div style="width:100%; height:1px; clear:both;"></div> -->
-
-      <!-- <div class="wrap6"> -->
-        <!--  -->
-        <!-- <div class="blog2"><img src="img/char.png" alt="wifi" width="81" height="81" class="logoblog" /><br />
-          <h1>Зарядные устройства для бизнеса</h1>
-        </div>
-        <div class="layer3"><span class="s14">Мы поможем вашим <br />
-            клиентам стать ещё лояльнее,</span>
-          <span class="s12">
-            <p>установив в ваше заведение<br />
-              антивандальные зарядные устройства<br />
-              с разъемами Lightning, micro USB, type-C<br />
-              (подходят для всех популярных моделей телефонов).</p>
-          </span>
-          <span class="s6">Для кафе:<br /></span>
-          <span class="s12">у нас есть много готовых решений, <br />
-            таких как: меню со встроенными Power Bank, <br />
-            беспроводные зарядные устройства <br />
-            или вмонтированные прямо в ваши столы <br />
-            кабели зарядки c технологией Quick Charge.
-            </p></span><br />
-          <span class="s6">Для гостиниц и автомоек:<br /></span>
-          <span class="s12">Антивандальнве зарядные устройства,<br /> которые могут размещаться как в зоне ресепшн<br />
-            или месте ожидания, так и в номерах</p></span></div>
-        <div class="layer2"><img src="img/char2.png" alt="phone1bask" width="554" height="494" /></div>
-
-        <div style="width:100%; height:1px; clear:both;"></div><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
-
-        <!-- <div class="wrap"><a name="form"></a>
-          <div class="layer2">
-            <form action="send.php" method="post">
-              <h2>Оставьте заявку</h2>
-              <input name="name" placeholder="Ваше имя:" class="textbox" required />
-              <input name="emailaddress" placeholder="Ваш e-mail:" class="textbox" type="email" required />
-              <textarea rows="4" cols="50" name="subject" placeholder="Ваш номер телефона:" class="message"
-                required></textarea>
-              <input name="submit" class="button" type="submit" value="Отправить заявку" />
-            </form>
-          </div>
-          <div class="layer4"><br /><br />
-            <span class="cen2">Контакты:</span><br /><br />
-            <span class="s7">+7 (960) 975 34-75</span><br /><span class="s3">airprgroup@ya.ru</span><br /><br />
-            <div class="podsoc">
-              <div class="podsoc2"><a href="https://www.instagram.com/air.pr/"><img src="img/Instagram_icon.png"
-                    alt="inst" width="80" height="80" /></a></div>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </div>
-  </div>
-</body>
-
-<body>
-  <section class="header"></section>
-  <!-- ./header -->
-  <main class="main">
-    <section class="cover"></section>
+    </section>
     <!-- ./cover -->
-    <section class="about"></section>
+    <section class="about">
+      <img src="img/wifi.png" alt="wifi авторизация" class="about__icon">
+      <h2 class="about__title">
+        WIFI Идентификация и авторизация для бизнеса
+      </h2>
+      <span class="about__subtitle">
+        Для ресторанов, кафе, гостиниц,
+        фитнес клубов и других публичных
+        WiFi-точек доступа
+      </span>
+      <div class="about__wrapper">
+        <div class="about__content">
+          <h3 class="about__heading">Как мы помогаем бизнесу</h3>
+          <p class="about__text">
+            C 2012 года помогаем бизнесу с организацией и поддержкой 
+            публичных WiFi сетей с маркетинговыми и аналитическими возможностями.
+            Уже 6 лет мы доказываем, что WiFi
+            может приносить весомую пользу.
+            За это время мы помогли двум тысячам заведений решить бизнес-задачи
+            через гостевую WiFi сеть.
+          </p>
+          <p class="about__text">
+            Мы протестировали большое количество
+            маркетинговых механик вместе с нашими
+            клиентами и у нас есть рабочие кейсы, которые мы готовы запустить для вас. 
+            Также, мы можем разработать индивидуальное решение под
+            задачи вашего бизнеса.
+          </p>
+          <a href="#" class="about__link">
+            Оставить заявку
+          </a>
+        </div>
+        <img src="img/about-image.png" alt="Пример wifi авторизации" class="about__image">
+      </div>
+    </section>
     <!-- ./about -->
-    <section class="howItWorks"></section>
-    <!-- ./howItworks -->
+    <section class="preview">
+      <h2 class="preview__heading">Как это работает?</h2>
+      <div class="preview-wrapper">
+        <article class="preview__article">
+          <img src="img/preview-image-1.png" alt="Подключение к wifi" class="preview__article-image"></img>
+          <span class="preview__article-title">1.ПОДКЛЮЧЕНИЕ</span>
+          <span class="preview__article-description">
+            Гость подключается к WiFi-сети с любого устройства
+          </span>
+        </article>
+        <article class="preview__article">
+          <img src="img/preview-image-2.png" alt="Авторизация в сети" class="preview__article-image"></img>
+          <span class="preview__article-title">2. WIFI АВТОРИЗАЦИЯ</span>
+          <span class="preview__article-description">
+            Для доступа в интернет гость выполняет ключевое действие
+          </span>
+        </article>
+        <article class="preview__article">
+          <div class="preview__article-action">
+            <img src="img/social-like.png" alt="Подписка на страницу" class="preview__article-icon"></img>
+            <span class="preview__article-title">Подписаться</span>
+            <span class="preview__article-description">на вашу страницу</span>
+          </div>
+          <div class="preview__article-action">
+            <img src="img/share.png" alt="Пост в соц сетях" class="preview__article-icon"></img>
+            <span class="preview__article-title">Разместить пост</span>
+            <span class="preview__article-description">в социальные сети</span>
+          </div>
+          <div class="preview__article-action">
+            <img src="img/protection.png" alt="SMS идентификация" class="preview__article-icon"></img>
+            <span class="preview__article-title">Пройти SMS-</span>
+            <span class="preview__article-description">идентификацию</span>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- ./preview -->
     <section class="content">
       <article class="article">
         <div class="article__text article__text_left">
@@ -573,14 +233,14 @@
       <h2 class="prices__heading">Наши цены на WIFI-идентификацию</h2>
       <div class="prices__wrapper">
         <article class="price">
-          <div class="price__heading-box">
+          <div class="price__heading">
             <div class="price__title">AIR PR Light</div>
             <div class="price__subtitle">
               Закрывает исключительно задачи по исполнению
               Постановлений Правительства РФ 758 и 801:
             </div>
           </div>
-          <div class="price__content-box">
+          <div class="price__content">
             <ul class="price__list">
               <li class="price__list-item">
                 <span class="price__list-item-heading">Идентификация по звонку</span>
@@ -615,13 +275,13 @@
         </article>
         <!-- ./price item -->
         <article class="price">
-          <div class="price__heading-box">
+          <div class="price__heading">
             <div class="price__title">AIR PR +</div>
             <div class="price__subtitle">
               включает в себя AIR PR Light, у более чем 90% клиентов установлено именно это решение:
             </div>
           </div>
-          <div class="price__content-box">
+          <div class="price__content">
             <ul class="price__list">
               <li class="price__list-item">
                 <span class="price__list-item-heading">Социальный маркетинг</span>
@@ -664,13 +324,13 @@
         </article>
         <!-- ./price item -->
         <article class="price">
-          <div class="price__heading-box">
+          <div class="price__heading">
             <div class="price__title">AIR PR + Радар</div>
             <div class="price__subtitle">
               включает в себя Wifi Радар, который закрывает особые потребности и задачи клиентов, а также:
             </div>
           </div>
-          <div class="price__content-box">
+          <div class="price__content">
             <li class="price__list-item">
               <span class="price__list-item-heading">Социальный маркетинг</span>
               <span class="price__list-item-description">
@@ -739,6 +399,78 @@
 
 
     <section class="wifi-radar">
+      <div class="section">
+        <img src="img/radar.png" alt="Wifi-Радар" class="section__icon">
+        <h2 class="section__title">WIFI-Радар</h2>
+        <article class="section__wrapper">
+          <div class="section__content">
+            <p class="section__text">
+              Потенциальные клиенты проходят мимо
+              вашего заведения, но по какой-либо
+              причине не заходят.
+              Соберите с помощью WiFi-Радара аудиторию
+              для таргетированной рекламы
+              в Яндекс, MyTarget, Вконтакте,
+              Одноклассниках, Mail.Ru.
+              </p>
+              <p class="section__text">С помощью Радара мы можем посчитать вашу проходимость.</p>
+          </div>
+          <img src="img/radar-cafe-image.png" alt="Кафе с Wifi-радаром" class="section__image">
+        </article>
+        <article class="section__wrapper">
+          <div class="action">
+            <img src="img/install-wifi-radar.png" alt="" class="action__icon">
+            <h4 class="action__caption">Ставим WiFi-Радар</h4>
+            <span class="action__text">
+              Специальный роутер собирает
+              метки всех устройств
+              с включенным WiFi
+              в радиусе до 50 метров
+            </span>
+          </div>
+          <div class="action">
+            <img src="img/collect-people.png" alt="" class="action__icon">
+            <h4 class="action__caption">Собираем аудиторию</h4>
+            <span class="action__text">
+              Используя данные с WiFi-Радара,
+              мы создаем аудиторию для
+              таргетирования рекламы
+              в Яндекс и MyTarget
+            </span>
+          </div>
+          <div class="action">
+            <img src="img/adv-launch.png" alt="" class="action__icon">
+            <h4 class="action__caption">Вы запускаете рекламу</h4>
+            <span class="action__text">
+              Настройте рекламу в Яндекс, Вконтакте,
+              Одноклассники, Mail.Ru
+              и других площадках MyTarget на тех,
+              кто реально приходил или был
+              рядом с вашим заведением
+            </span>
+          </div>
+        </article>
+        <h3 class="section__suntitle"></h3>
+        <article class="section__wrapper">
+          <div class="action">
+            <img src="img/cart.png" alt="" class="action__icon">
+            <h4 class="action__caption">Рестораны, бары, магазины, гостиницы, клиники, фитнес, салоны красоты, торговые</h4>
+            <span class="action__text">
+              Оборудуйте вашу точку продаж WiFi-Радаром,
+              чтобы собирать аудиторию и привлекать гостей.
+            </span>
+          </div>
+          <div class="action">
+            <img src="img/location.png" alt="" class="action__icon">
+            <h4 class="action__caption">Мероприятия, рекламные агентства, BTL, концерты, промоутеры</h4>
+            <span class="action__text">
+              Что если бы вы могли собрать аудиторию посетителей мероприятия?
+              Или догнать людей рекламой в интернете
+              после посещения вашей промо-точки?
+            </span>
+          </div>
+        </article>
+      </div>
     </section>
     <!-- ./wifi-radar -->
 
@@ -797,14 +529,14 @@
   </main>
   <!-- ./main -->
   <section class="footer">
-    <div class="footer-form">
+    <div class="form">
       <form action="send.php" method="post">
         <h2>Оставьте заявку</h2>
-        <input name="name" placeholder="Ваше имя:" class="footer-form__textbox" required />
-        <input name="emailaddress" placeholder="Ваш e-mail:" class="footer-form__textbox" type="email" required />
-        <textarea rows="4" cols="50" name="subject" placeholder="Ваш номер телефона:" class="footer-form__message"
+        <input name="name" placeholder="Ваше имя:" class="form__textbox" required />
+        <input name="emailaddress" placeholder="Ваш e-mail:" class="form__textbox" type="email" required />
+        <textarea rows="4" cols="50" name="subject" placeholder="Ваш номер телефона:" class="form__message"
           required></textarea>
-        <input name="submit" class="footer-form__button" type="submit" value="Отправить заявку" />
+        <input name="submit" class="form__button" type="submit" value="Отправить заявку" />
       </form>
     </div>
     <!-- ./footer-form -->
