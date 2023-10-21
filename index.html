@@ -15,12 +15,12 @@
 <body class="body">
   <section class="header">
     <a href="#"><img src="img/logo-header.png" alt="Логотип AIR PR" class="header__logo"></a>
-    <nav class="header__navbar">
-      <ul>
-        <li class="header__navbar-item"><a href="#">УСЛУГИ</a></li>
-        <li class="header__navbar-item"><a href="#">ЦЕНЫ</a></li>
-        <li class="header__navbar-item"><a href="#">КОНТАКТЫ</a></li>
-        <li class="header__navbar-item"><a href="#">ВОЙТИ В КАБИНЕТ</a></li>
+    <nav>
+      <ul class="header__navbar">
+        <li class="header__navbar-item"><a href="#" class="header__navbar-link">УСЛУГИ</a></li>
+        <li class="header__navbar-item"><a href="#" class="header__navbar-link">ЦЕНЫ</a></li>
+        <li class="header__navbar-item"><a href="#" class="header__navbar-link">КОНТАКТЫ</a></li>
+        <li class="header__navbar-item"><a href="#" class="header__navbar-link">ВОЙТИ В КАБИНЕТ</a></li>
       </ul>
     </nav>
   </section>
@@ -42,14 +42,13 @@
           <img src="img/charging.png" alt="Wifi идентификация" class="cover__services-icon">
           <span class="cover__services-text">Зарядные устройства</span>
         </div>
-        <div class="form">
-          <form method="POST" id="formx" action="javascript:void(null);" onsubmit="call()">
-            <h2>Оставьте заявку</h2>
+          <form method="POST" id="formx" action="javascript:void(null);" onsubmit="call()" class="form">
+            <h2 class="form__title">Оставьте заявку</h2>
             <input name="name" placeholder="Ваше имя:" class="form__textbox" required />
             <input name="emailaddress" placeholder="Ваш e-mail:" class="form__textbox" type="email" required />
             <textarea rows="4" cols="50" name="subject" placeholder="Ваш номер телефона:" class="form__message"
               required></textarea>
-            <input name="submit" class="form__button" type="submit" value="Отправить заявку" />
+            <input name="submit" class="form__button" type="submit" value="Отправить" />
           </form>
 
           <script type="text/javascript" language="javascript">
@@ -69,7 +68,6 @@
               });
             }
           </script>
-        </div>
       </div>
     </section>
     <!-- ./cover -->
@@ -102,7 +100,7 @@
             задачи вашего бизнеса.
           </p>
           <a href="#" class="about__link">
-            Оставить заявку
+            Оставить заявку →
           </a>
         </div>
         <img src="img/about-image.png" alt="Пример wifi авторизации" class="about__image">
@@ -111,7 +109,7 @@
     <!-- ./about -->
     <section class="preview">
       <h2 class="preview__heading">Как это работает?</h2>
-      <div class="preview-wrapper">
+      <div class="preview__wrapper">
         <article class="preview__article">
           <img src="img/preview-image-1.png" alt="Подключение к wifi" class="preview__article-image"></img>
           <span class="preview__article-title">1.ПОДКЛЮЧЕНИЕ</span>

@@ -1,5 +1,5 @@
-.about__wrapper {
-    padding-top: 20px;
+.preview__wrapper {
+    padding: 20px 0;
     display: flex;
     justify-content: space-around;
 }

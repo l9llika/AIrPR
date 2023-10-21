@@ -1,0 +1,14 @@
+.header {
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: no-repeat url(../../img/navbar-background.png);
+    background-size: 100%;
+}

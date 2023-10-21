@@ -1,0 +1,5 @@
+.cover__services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
