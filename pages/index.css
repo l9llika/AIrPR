@@ -35,6 +35,8 @@
 @import url(../blocks/article/__image/article__image.css);
 @import url(../blocks/article/__text/article__text.css);
 @import url(../blocks/article/__text/article__text_left.css);
+/* content */
+@import url(../blocks/content/content.css);
 /* contacts */
 @import url(../blocks/contacts/contacts.css);
 @import url(../blocks/contacts/__email/contacts__email.css);
@@ -63,11 +65,13 @@
 @import url(../blocks/preview/__article-description/preview__article-description.css);
 @import url(../blocks/preview/__article-image/preview__article-image.css);
 @import url(../blocks/preview/__article-title/preview__article-title.css);
+@import url(../blocks/preview/__article-wrapper/preview__article-wrapper.css);
 @import url(../blocks/preview/__wrapper/preview__wrapper.css);
 @import url(../blocks/preview/__article-icon/preview__article-icon.css);
 /* price */
 @import url(../blocks/price/price.css);
 @import url(../blocks/price/__content/price__content.css);
+@import url(../blocks/price/__currency-wrapper/price__currency-wrapper.css);
 @import url(../blocks/price/__cost-currency/price__cost-currency.css);
 @import url(../blocks/price/__cost-total/price__cost-total.css);
 @import url(../blocks/price/__currency-cation/price__currency-caption.css);

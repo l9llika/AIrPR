@@ -1,0 +1,7 @@
+.section__wrapper {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}

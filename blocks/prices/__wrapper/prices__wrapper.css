@@ -1,0 +1,5 @@
+.prices__wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 26px;
+}

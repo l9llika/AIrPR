@@ -127,18 +127,24 @@
         <article class="preview__article">
           <div class="preview__article-action">
             <img src="img/social-like.png" alt="Подписка на страницу" class="preview__article-icon"></img>
-            <span class="preview__article-title">Подписаться</span>
-            <span class="preview__article-description">на вашу страницу</span>
+            <div class="preview__article-wrapper">
+              <span class="preview__article-title">Подписаться</span>
+              <span class="preview__article-description">на вашу страницу</span>
+            </div>
           </div>
           <div class="preview__article-action">
             <img src="img/share.png" alt="Пост в соц сетях" class="preview__article-icon"></img>
-            <span class="preview__article-title">Разместить пост</span>
-            <span class="preview__article-description">в социальные сети</span>
+            <div class="preview__article-wrapper">
+              <span class="preview__article-title">Разместить пост</span>
+              <span class="preview__article-description">в социальные сети</span>
+            </div>
           </div>
           <div class="preview__article-action">
             <img src="img/protection.png" alt="SMS идентификация" class="preview__article-icon"></img>
-            <span class="preview__article-title">Пройти SMS-</span>
-            <span class="preview__article-description">идентификацию</span>
+            <div class="preview__article-wrapper">
+              <span class="preview__article-title">Пройти SMS-</span>
+              <span class="preview__article-description">идентификацию</span>
+            </div>
           </div>
         </article>
       </div>
@@ -230,7 +236,7 @@
     <section class="prices">
       <h2 class="prices__heading">Наши цены на WIFI-идентификацию</h2>
       <div class="prices__wrapper">
-        <article class="price">
+        <article class="price price_blue">
           <div class="price__heading">
             <div class="price__title">AIR PR Light</div>
             <div class="price__subtitle">
@@ -241,7 +247,7 @@
           <div class="price__content">
             <ul class="price__list">
               <li class="price__list-item">
-                <span class="price__list-item-heading">Идентификация по звонку</span>
+                <span class="price__list-item-heading">Идентификация по звонку</span><br />
                 <span class="price__list-item-description">
                   (включена в стоимость решения)
                   более 90% партнеров и клиентов
@@ -249,7 +255,7 @@
                 </span>
               </li>
               <li class="price__list-item">
-                <span class="price__list-item-heading">SMS-идентификация</span>
+                <span class="price__list-item-heading">SMS-идентификация</span><br />
                 <span class="price__list-item-description">
                   (при использовании нашего шлюза идентификации оплачиваются дополнительно);
                 </span>
@@ -259,20 +265,23 @@
                 <span class="price__list-item-description"></span>
               </li>
               <li class="price__list-item">
-                <span class="price__list-item-heading">Часть аналитических модулей</span>
+                <span class="price__list-item-heading">Часть аналитических модулей</span><br />
                 <span class="price__list-item-description">
                   (статистика подключений, почасовой трафик);
                 </span>
               </li>
             </ul>
+          <div class="price__currency-wrapper">
             <span class="price__currency-caption">Стоимость:</span>
-            <span class="price__cost-total">650</span>
-            <span class="price__cost-currency">₽/месяц</span>
-            <button class="price__request-button">Отправить заявку</button>
+            <span class="price__cost-total">
+              650 <span class="price__cost-currency">₽/месяц</span>
+            </span>
+            <button class="price__request-button">Отправить заявку →</button>
+          </div>
           </div>
         </article>
         <!-- ./price item -->
-        <article class="price">
+        <article class="price price_pink">
           <div class="price__heading">
             <div class="price__title">AIR PR +</div>
             <div class="price__subtitle">
@@ -282,7 +291,7 @@
           <div class="price__content">
             <ul class="price__list">
               <li class="price__list-item">
-                <span class="price__list-item-heading">Социальный маркетинг</span>
+                <span class="price__list-item-heading">Социальный маркетинг</span><br />
                 <span class="price__list-item-description">
                   авторизация через соц.сети: Facebook, ВКонтакте, Instagram, Одноклассники, Twitter, Google+;
                 </span>
@@ -296,13 +305,13 @@
                 <span class="price__list-item-description"></span>
               </li>
               <li class="price__list-item">
-                <span class="price__list-item-heading">Расширенные аналитические возможности</span>
+                <span class="price__list-item-heading">Расширенные аналитические возможности</span><br />
                 <span class="price__list-item-description">
                   (сбор демографических данных гостей, посещения по клиенту, география посещений для сетей);
                 </span>
               </li>
               <li class="price__list-item">
-                <span class="price__list-item-heading">Интеграция в программу лояльности компании</span>
+                <span class="price__list-item-heading">Интеграция в программу лояльности компании</span><br />
                 <span class="price__list-item-description">
                   (устройство, как карта клиента при подключении к WiFi, установка мобильных приложений);
                 </span>
@@ -314,14 +323,17 @@
                 </span>
               </li>
             </ul>
+          <div class="price__currency-wrapper">
             <span class="price__currency-caption">Стоимость:</span>
-            <span class="price__cost-total">1 000</span>
-            <span class="price__cost-currency">₽/месяц</span>
-            <button class="price__request-button">Отправить заявку</button>
+            <span class="price__cost-total">
+              1 000 <span class="price__cost-currency">₽/месяц</span>
+            </span>
+            <button class="price__request-button">Отправить заявку →</button>
+          </div>
           </div>
         </article>
         <!-- ./price item -->
-        <article class="price">
+        <article class="price price_green">
           <div class="price__heading">
             <div class="price__title">AIR PR + Радар</div>
             <div class="price__subtitle">
@@ -329,8 +341,9 @@
             </div>
           </div>
           <div class="price__content">
+          <ul class="price__list">
             <li class="price__list-item">
-              <span class="price__list-item-heading">Социальный маркетинг</span>
+              <span class="price__list-item-heading">Социальный маркетинг</span><br />
               <span class="price__list-item-description">
                 авторизация через соц.сети: Facebook, ВКонтакте, Instagram, Одноклассники, Twitter, Google+;
               </span>
@@ -344,34 +357,37 @@
               <span class="price__list-item-description"></span>
             </li>
             <li class="price__list-item">
-              <span class="price__list-item-heading">Расширенные аналитические возможности</span>
+              <span class="price__list-item-heading">Расширенные аналитические возможности</span><br />
               <span class="price__list-item-description">
                 (сбор демографических данных гостей, посещения по клиенту, география посещений для сетей);
               </span>
             </li>
             <li class="price__list-item">
-              <span class="price__list-item-heading">Интеграция в программу лояльности компании</span>
+              <span class="price__list-item-heading">Интеграция в программу лояльности компании</span><br />
               <span class="price__list-item-description">
                 (устройство, как карта клиента при подключении к WiFi, установка мобильных приложений);
               </span>
             </li>
             <li class="price__list-item">
-              <span class="price__list-item-heading">Рекламный модуль</span>
+              <span class="price__list-item-heading">Рекламный модуль</span><br />
               <span class="price__list-item-description">
                 (управление контентом стартовой страницы, видео- и графические форматы рекламы);
               </span>
             </li>
             <li class="price__list-item">
-              <span class="price__list-item-heading">Wifi-Радар</span>
+              <span class="price__list-item-heading">Wifi-Радар</span><br />
               <span class="price__list-item-description">
                 (установка, настройка и обслуживание радара в любом удобном для вас месте);
               </span>
             </li>
           </ul>
+          <div class="price__currency-wrapper">
             <span class="price__currency-caption">Стоимость:</span>
-            <span class="price__cost-total">1 500</span>
-            <span class="price__cost-currency">₽/месяц</span>
-            <button class="price__request-button">Отправить заявку</button>
+            <span class="price__cost-total">
+              1 500 <span class="price__cost-currency">₽/месяц</span>
+            </span>
+            <button class="price__request-button">Отправить заявку →</button>
+          </div>
           </div>
         </article>
         <!-- ./price item -->
@@ -386,8 +402,7 @@
           <div class="section__content">
             <h3 class="section__subtitle">Покажите рекламу в интернете вашим гостям</h3>
             <span class="section__text"> Создаем сайты и настраиваем <span class="section__text-red">Я</span>ндекс Директ.
-              Индивидуальный подход к каждому клиенту;
-              Низкие цены </span>
+              Индивидуальный подход к каждому клиенту;</span>
           </div>
           <img src="img/ya-direct.png" alt="Настройка Яндекс директ" class="section__image"></img>
         </article>
@@ -448,7 +463,7 @@
             </span>
           </div>
         </article>
-        <h3 class="section__suntitle"></h3>
+        <h3 class="section__subtitle">Кому необходим WIFI Радар?</h3>
         <article class="section__wrapper">
           <div class="action">
             <img src="img/cart.png" alt="" class="action__icon">
@@ -527,23 +542,21 @@
   </main>
   <!-- ./main -->
   <section class="footer">
-    <div class="form">
-      <form action="send.php" method="post">
-        <h2>Оставьте заявку</h2>
+      <form action="send.php" method="post" class="form">
+        <h2 class="form__title">Оставьте заявку</h2>
         <input name="name" placeholder="Ваше имя:" class="form__textbox" required />
         <input name="emailaddress" placeholder="Ваш e-mail:" class="form__textbox" type="email" required />
         <textarea rows="4" cols="50" name="subject" placeholder="Ваш номер телефона:" class="form__message"
           required></textarea>
         <input name="submit" class="form__button" type="submit" value="Отправить заявку" />
       </form>
-    </div>
     <!-- ./footer-form -->
     <div class="contacts">
       <div class="contacts__heading">Контакты:</div>
-      <div class="contacts__phone">7 (960) 975 34-75</div>
+      <div class="contacts__phone">+7 (960) 975 34-75</div>
       <div class="contacts__email">airprgroup@ya.ru</div>
       <a href="https://www.instagram.com/air.pr/">
-        <img rc="img/Instagram_icon.png" alt="Ссылка на инстаграм" class="contacts__image">
+        <img src="img/instagram_icon.png" alt="Ссылка на инстаграм" class="contacts__image">
       </a>
     </div>
     <!-- ./contacts -->

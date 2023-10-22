@@ -1,0 +1,7 @@
+.preview__article-action {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    column-gap: 20px;
+}

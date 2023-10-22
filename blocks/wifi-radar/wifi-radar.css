@@ -1,0 +1,6 @@
+.wifi-radar {
+    height: 1300px;
+    background: no-repeat url(../../img/wifi-radar-background.jpg);
+    background-size: cover;
+    border-radius: 20px;
+}

@@ -1,0 +1,16 @@
+.price {
+    height: 100%;
+    width: 360px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.price_blue {
+    background: linear-gradient(to bottom, #0099FF 90px, #FFFFFF 90px, #FFFFFF 0);
+}
+.price_pink {
+    background: linear-gradient(to bottom, #FF1493 90px, #FFFFFF 90px, #FFFFFF 0);
+}
+.price_green {
+    background: linear-gradient(to bottom, #32CD32 90px, #FFFFFF 90px, #FFFFFF 0);
+
+}
