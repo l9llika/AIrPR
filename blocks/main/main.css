@@ -3,3 +3,10 @@
     margin: auto;
     max-width: 1140px;
 }
+/* 1200, 992, 768, 576 и 376 */
+@media (max-width: 1140px) { 
+    .main {
+        padding-top: 70px;
+        max-width: 1024px;
+    }
+ }

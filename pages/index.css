@@ -47,6 +47,7 @@
 @import url(../blocks/contacts/__phone/contacts__phone.css);
 /* cover */
 @import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__logo/cover__logo.css);
 @import url(../blocks/cover/__image/cover__image.css);
 @import url(../blocks/cover/__services/cover__services.css);
 @import url(../blocks/cover/__services-icon/cover__services-icon.css);

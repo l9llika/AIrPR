@@ -13,3 +13,8 @@
     color: #00CCFF;
     background-size: 100% 2px;
 }
+@media (max-width: 1140px) { 
+    .header__navbar-link {
+        font-size: 18px;
+    }
+}

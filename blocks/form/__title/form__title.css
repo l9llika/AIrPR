@@ -2,3 +2,8 @@
     font-size: 36px;
     font-weight: 600;
 }
+@media (max-width: 1140px) { 
+    .form__title {
+        font-size: 24px;
+    }
+}

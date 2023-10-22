@@ -2,3 +2,8 @@
     width: 50px;
     margin-bottom: 5px;
 }
+@media (max-width: 1140px) { 
+    .cover__services-icon {
+        width: 40px;
+    }
+}

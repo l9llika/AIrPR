@@ -3,7 +3,7 @@
     background: no-repeat url(../../img/background.png);
     background-position: center;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 400;

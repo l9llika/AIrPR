@@ -7,3 +7,10 @@
     border: none;
     font-size: 18px;
 }
+@media (max-width: 1140px) { 
+    .form__message {
+        margin-bottom: 30px;
+        height: 20px;
+        font-size: 14px;
+    }
+}
