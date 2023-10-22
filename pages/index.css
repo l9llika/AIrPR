@@ -10,6 +10,8 @@
 @import url(../blocks/header/__navbar-item/header__navbar-item.css);
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__navbar-link/header__navbar-link.css);
+@import url(../blocks/header/__navbar-dropdown/header__navbar-dropdown.css);
+@import url(../blocks/header/__navbar-dropdown-item/header__navbar-dropdown-item.css);
 /* main */
 @import url(../blocks/main/main.css);
 /* about */

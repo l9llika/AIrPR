@@ -2,3 +2,6 @@
     padding-left: 40px;
     list-style-type: none;
 }
+.header__navbar-item:hover .header__navbar-dropdown {
+    display: block;
+}
