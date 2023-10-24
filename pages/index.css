@@ -15,16 +15,16 @@
 /* main */
 @import url(blocks/main/main.css);
 /* about */
-@import url(blocks/about/about.css);
-@import url(blocks/about/__content/about__content.css);
-@import url(blocks/about/__heading/about__heading.css);
-@import url(blocks/about/__icon/about__icon.css);
-@import url(blocks/about/__image/about__image.css);
-@import url(blocks/about/__link/about__link.css);
-@import url(blocks/about/__title/about__title.css);
-@import url(blocks/about/__subtitle/about__subtitle.css);
-@import url(blocks/about/__text/about__text.css);
-@import url(blocks/about/__wrapper/about__wrapper.css);
+@import url(/blocks/about/about.css);
+@import url(./blocks/about/__content/about__content.css);
+@import url(./blocks/about/__heading/about__heading.css);
+@import url(./blocks/about/__icon/about__icon.css);
+@import url(./blocks/about/__image/about__image.css);
+@import url(/blocks/about/__link/about__link.css);
+@import url(/blocks/about/__title/about__title.css);
+@import url(/blocks/about/__subtitle/about__subtitle.css);
+@import url(./blocks/about/__text/about__text.css);
+@import url(../blocks/about/__wrapper/about__wrapper.css);
 /* action */
 @import url(blocks/action/action.css);
 @import url(blocks/action/__caption/action__caption.css);
