@@ -3,15 +3,15 @@
 Wifi autorization service
 My first old website
 
-completed now.
-he's waiting for optimization and refactoring
+completed now at 2020 jul
 
-what i planing to do?
-
-- code rebuild
-- BEM naming
-- Responsive and adaptive
-- mobile version
+Rebuilding at oct 2023
+  - add BEM naming
+  - image files full optimization
+  - file structure refactoring
+  - an internet download optimization work
 
 this website in the internet
-[AirPR](https://airpr.ru/)
+OLD VERSION -> [AirPR](https://airpr.ru/)
+
+NEW VERSION IN GitHub pages -> [AirPR - GH Pages](https://l9llika.github.io/AIrPR/)
